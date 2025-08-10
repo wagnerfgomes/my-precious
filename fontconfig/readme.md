@@ -46,7 +46,7 @@ Os tamanhos de fonte são ajustados automaticamente para tablet e desktop usando
 
 ## Como usar
 
-1. instale o Sass globalmente:
+1. instale o Sass globalmente (acho que só funciona globalmente):
 
     ```bash
     npm install -g sass
@@ -54,9 +54,15 @@ Os tamanhos de fonte são ajustados automaticamente para tablet e desktop usando
 
 2. Importe o arquivo SCSS no seu projeto.
 
-3. Utilize as classes `.title-*`, `.font-body`, `.tooltip` nos elementos HTML conforme a hierarquia e contexto desejados.
+3. Rode o compilador:
+   
+   ```bash
+   sass --watch font-confg.scss seu-arquivo.css
+   ```
+    
+4. Utilize as classes `.title-*`, `.font-body`, `.tooltip` nos elementos HTML conforme a hierarquia e contexto desejados.
 
-4. Ajuste as variáveis conforme a identidade visual do seu projeto.
+5. Ajuste as variáveis conforme a identidade visual do seu projeto.
 
 ---
 
@@ -67,3 +73,4 @@ Os tamanhos de fonte são ajustados automaticamente para tablet e desktop usando
 <p class="font-body">Texto do corpo.</p>
 <span class="tooltip">Dica</span>
 ```
+
